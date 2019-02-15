@@ -19,10 +19,10 @@ public class ControladorMensaje {
     
  @CrossOrigin   
  @GetMapping("/mensaje")   
- public String holaMundo(){
+ public Mensaje holaMundo(){
      Mensaje mensa=new Mensaje();
      mensa.setTitulo("Hola mundo");
-     return "Mi primer servicio REST accedido a origenes crzados";
+     return mensa;
  }
     
 }
