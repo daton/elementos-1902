@@ -5,6 +5,7 @@
  */
 package org.unitec.elementos;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,12 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/")
+@CrossOrigin
 public class ControladorHola {
     
  @GetMapping("/")   
  public String holaMundo(){
      
-     return "Mi primer servicio REST con un cambio";
+     return "Mi primer servicio REST accedido a origenes crzados";
  }
     
 }
