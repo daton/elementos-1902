@@ -7,13 +7,15 @@ package org.unitec.elementos;
 
 import org.springframework.data.annotation.Id;
 
+
+
 /**
  *
  * @author campitos
  */
 public class Usuario {
 
-    @Id
+@Id
     private Integer id;
     private String nombre;
     private Localizacion localizacion;
