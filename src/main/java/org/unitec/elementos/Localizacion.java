@@ -10,26 +10,24 @@ package org.unitec.elementos;
  * @author campitos
  */
 public class Localizacion {
-    private long lat;
-    private long lon;
+    private double lat;
+    private double lon;
 
-    public Localizacion() {
-    }
-    
-
-    public long getLat() {
+    public double getLat() {
         return lat;
     }
 
-    public void setLat(long lat) {
+    public void setLat(double lat) {
         this.lat = lat;
     }
 
-    public long getLon() {
+    public double getLon() {
         return lon;
     }
 
-    public void setLon(long lon) {
+    public void setLon(double lon) {
         this.lon = lon;
     }
 }
+
+   
