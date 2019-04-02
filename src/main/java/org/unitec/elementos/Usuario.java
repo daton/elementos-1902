@@ -5,6 +5,7 @@
  */
 package org.unitec.elementos;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.Id;
 
 
@@ -13,12 +14,22 @@ import org.springframework.data.annotation.Id;
  *
  * @author campitos
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Usuario {
 
 @Id
     private Integer id;
     private String nombre;
     private Localizacion localizacion;
+    private Orden orden;
+
+    public Orden getOrden() {
+        return orden;
+    }
+
+    public void setOrden(Orden orden) {
+        this.orden = orden;
+    }
 
     @Override
     public String toString() {
